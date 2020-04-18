@@ -1,0 +1,80 @@
+<style>
+
+/* color samples week 5
+ * 
+ * march books: #677a6d
+ * dress blue: #142a52
+ * 
+ */*
+
+body, html {
+    overflow: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+
+}
+
+.scrollable
+    {
+        scroll-snap-type: y mandatory;
+         
+    }
+    
+        
+ 
+    
+.parallax
+    {
+        perspective: 1px;
+        height: 100vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 100%;
+        
+    }
+    
+.parallax_group {
+    position: relative;
+  height: 100vh;
+  transform-style: preserve-3d;
+  scroll-snap-type: y mandatory;
+   
+  
+}
+    
+.parallax_layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin-x: 100%;
+    width: 100vw;
+    padding: 75vh 0px;
+}
+
+.parallax_layer--base {
+    transform: translateZ(0px);
+}
+
+.parallax_layer--back {
+    transform: translateZ(-1px) scale(2);
+    scroll-snap-type: y mandatory;
+
+   
+}
+
+
+#group1 {
+    z-index: 1;
+}
+
+#group2 {
+    z-index: 2;
+}
+
+</style>
